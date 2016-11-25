@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>This is the Login Screen</title>
+</head>
+<body>
+
+<h1><center> Owner Login Portal </center></h1>
+
+<!--  Create a form to take the owner's credential -->
+
+	<center>
+		
+		<form name = "login" text=allign = "center">
+		Username<input type = "text" name = "user" >
+		<br></br>
+		Password<input type = "password" name = "pass" >
+		<br></br>
+		<input type = "button" onclick = "validate(login)" value = "Click Here to Login">
+		<br></br>
+		
+		<input type = "reset" value = "Clear All">
+		
+		
+	
+	
+		</form>
+	
+		<!-- End of the html form code to take login info  -->
+	
+	</center>
+	
+	
+	<!--Javascript code to validiate the fields from owner -->
+	<script>
+	
+		function validate(form){
+			
+			/*Check if name is Spiro*/
+			
+			if(form.user.value == "Spiro"){
+				
+				if(form.pass.value == "Dev"){
+					
+					alert("Valide login");
+					
+					/*Open the owners dashboard*/
+					window.open("Dashboard.html", "_self");
+					
+				}
+				
+			}
+			else{
+				
+				alert("Invalide owner login!");
+			}
+			
+			
+		}
+		
+		/*End of function to validate login*/
+	
+	
+	</script>
+
+</body>
+</html>
